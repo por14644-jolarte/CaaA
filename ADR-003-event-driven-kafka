@@ -1,0 +1,66 @@
+# ADR-003: Kafka como Plataforma Corporativa para Integración Basada en Eventos
+
+## Estado
+
+Aceptado
+
+## Fecha
+
+2026-09-22
+
+## Contexto
+
+La organización requiere mecanismos que permitan desacoplar sistemas, mejorar la escalabilidad y soportar patrones de integración orientados a eventos.
+
+Las integraciones síncronas punto a punto generan dependencias directas que afectan:
+
+- Disponibilidad.
+- Escalabilidad.
+- Evolución tecnológica.
+- Reutilización de capacidades.
+
+## Decisión
+
+Adoptar Apache Kafka como plataforma corporativa para la implementación de patrones de integración basados en eventos.
+
+Los escenarios que requieran comunicación asíncrona, procesamiento desacoplado o distribución masiva de información deberán evaluar Kafka como primera alternativa tecnológica.
+
+## Justificación
+
+La adopción de Kafka permite:
+
+- Desacoplamiento entre productores y consumidores.
+- Escalabilidad horizontal.
+- Mayor resiliencia.
+- Distribución eficiente de eventos.
+- Trazabilidad del flujo de información.
+
+## Consecuencias
+
+### Positivas
+
+- Reducción de dependencias entre aplicaciones.
+- Mayor capacidad de escalamiento.
+- Facilidad para integrar nuevos consumidores.
+- Mejor soporte de arquitecturas distribuidas.
+
+### Negativas
+
+- Incremento de complejidad operativa.
+- Necesidad de gobierno de tópicos.
+- Gestión de esquemas y versiones de eventos.
+
+## Cumplimiento
+
+Los equipos deberán:
+
+- Utilizar estándares de eventos corporativos.
+- Documentar tópicos y esquemas.
+- Implementar monitoreo y trazabilidad.
+- Gestionar versiones de eventos.
+
+## Referencias
+
+- Event Driven Architecture Guidelines
+- Enterprise Integration Standards
+- Messaging Governance Principles
