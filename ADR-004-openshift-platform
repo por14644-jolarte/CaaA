@@ -1,0 +1,71 @@
+# ADR-004: OpenShift como Plataforma Corporativa para Soluciones Contenerizadas
+
+## Estado
+
+Aceptado
+
+## Fecha
+
+2026-09-22
+
+## Contexto
+
+La organización requiere una plataforma estandarizada para el despliegue y operación de aplicaciones basadas en contenedores.
+
+La utilización de múltiples mecanismos de despliegue dificulta:
+
+- La automatización.
+- La estandarización.
+- La seguridad.
+- La observabilidad.
+- La administración operativa.
+
+## Decisión
+
+Adoptar OpenShift como plataforma corporativa para la ejecución de cargas de trabajo contenerizadas.
+
+Todas las nuevas aplicaciones diseñadas bajo principios cloud-native deberán evaluar OpenShift como plataforma objetivo de despliegue.
+
+## Justificación
+
+OpenShift proporciona capacidades de:
+
+- Orquestación de contenedores.
+- Seguridad empresarial.
+- Automatización de despliegues.
+- Escalabilidad.
+- Integración con pipelines DevOps.
+- Observabilidad.
+
+La plataforma ofrece una base común para la operación y evolución de aplicaciones modernas.
+
+## Consecuencias
+
+### Positivas
+
+- Estandarización tecnológica.
+- Reducción de complejidad operativa.
+- Mayor escalabilidad.
+- Mejor integración con procesos DevOps.
+
+### Negativas
+
+- Dependencia de la plataforma.
+- Curva de aprendizaje inicial.
+- Costos asociados a la operación.
+
+## Cumplimiento
+
+Las aplicaciones desplegadas deberán cumplir:
+
+- Estándares de seguridad corporativos.
+- Lineamientos de observabilidad.
+- Requisitos de gestión de secretos.
+- Estrategias de alta disponibilidad.
+- Procesos de automatización definidos por la organización.
+
+## Referencias
+
+- Container Platform Standards
+- DevOps Governance Model
+- Cloud Native Principles
