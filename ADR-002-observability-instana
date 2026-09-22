@@ -1,0 +1,78 @@
+# ADR-002: IBM Instana como Plataforma Corporativa de Observabilidad
+
+## Estado
+
+Aceptado
+
+## Fecha
+
+2026-09-22
+
+## Contexto
+
+La organización requiere capacidades de observabilidad que permitan monitorear de extremo a extremo las aplicaciones, plataformas e integraciones críticas.
+
+El crecimiento de arquitecturas distribuidas basadas en APIs, contenedores, eventos y microservicios incrementa la complejidad operativa y dificulta la identificación oportuna de incidentes.
+
+La falta de visibilidad transversal puede impactar negativamente:
+
+- Disponibilidad.
+- Diagnóstico de fallas.
+- Experiencia de usuario.
+- Gestión de capacidad.
+- Cumplimiento de niveles de servicio.
+
+## Decisión
+
+Adoptar IBM Instana como plataforma corporativa de observabilidad para las soluciones estratégicas de la organización.
+
+Toda solución nueva deberá considerar desde su diseño los requerimientos de monitoreo, métricas, trazabilidad distribuida y alertamiento definidos por arquitectura.
+
+## Justificación
+
+La plataforma proporciona:
+
+- Monitoreo en tiempo real.
+- Descubrimiento automático.
+- Trazabilidad distribuida.
+- Correlación de eventos.
+- Visibilidad sobre aplicaciones e infraestructura.
+
+El modelo facilita la observabilidad integral sobre plataformas como:
+
+- OpenShift.
+- API Connect.
+- ACE.
+- Kafka.
+- Bases de datos.
+- Aplicaciones corporativas.
+
+## Consecuencias
+
+### Positivas
+
+- Disminución en tiempos de diagnóstico.
+- Incremento de la disponibilidad.
+- Mejor experiencia operativa.
+- Mayor visibilidad transaccional.
+
+### Negativas
+
+- Consumo adicional de recursos para agentes.
+- Dependencia tecnológica de la plataforma.
+- Requerimientos de adopción por parte de los equipos.
+
+## Cumplimiento
+
+Todo servicio deberá:
+
+- Generar métricas operativas.
+- Exponer información para monitoreo.
+- Integrarse con la plataforma de observabilidad.
+- Cumplir estándares corporativos de instrumentación.
+
+## Referencias
+
+- Observability Standards
+- Monitoring Guidelines
+- Application Reliability Principles
