@@ -1,0 +1,71 @@
+# ADR-001: IBM API Connect como Plataforma Corporativa para Exposición y Gobierno de APIs
+
+## Estado
+
+Aceptado
+
+## Fecha
+
+2026-09-22
+
+## Contexto
+
+La organización requiere exponer capacidades de negocio a consumidores internos y externos de manera controlada, segura y gobernada.
+
+Históricamente, los equipos han implementado mecanismos diversos para la publicación de servicios, generando diferencias en aspectos como:
+
+- Seguridad.
+- Autenticación.
+- Trazabilidad.
+- Administración del ciclo de vida.
+- Documentación.
+- Monitoreo.
+
+La falta de estandarización dificulta la aplicación consistente de controles transversales y aumenta el esfuerzo operativo asociado a la administración de interfaces.
+
+## Decisión
+
+Establecer IBM API Connect como la plataforma corporativa para la publicación, protección, administración y gobierno de APIs.
+
+Toda API expuesta fuera del dominio de una aplicación deberá ser publicada a través de IBM API Connect, salvo excepciones debidamente aprobadas mediante proceso formal de arquitectura.
+
+## Justificación
+
+La adopción de una plataforma centralizada permite:
+
+- Aplicar políticas homogéneas de seguridad.
+- Centralizar autenticación y autorización.
+- Gestionar el ciclo de vida de APIs.
+- Publicar documentación estandarizada.
+- Obtener métricas de consumo.
+- Facilitar el gobierno tecnológico.
+
+## Consecuencias
+
+### Positivas
+
+- Incremento del nivel de gobernabilidad.
+- Reducción de riesgos de seguridad.
+- Estandarización de APIs corporativas.
+- Mayor visibilidad operativa.
+
+### Negativas
+
+- Dependencia de una plataforma central.
+- Necesidad de capacitación técnica.
+- Ajustes en procesos de desarrollo existentes.
+
+## Cumplimiento
+
+Los equipos deberán:
+
+- Publicar APIs mediante API Connect.
+- Documentar APIs utilizando estándares corporativos.
+- Implementar políticas de seguridad aprobadas.
+- Mantener inventario actualizado de APIs.
+
+## Referencias
+
+- API Governance Standards
+- Security Architecture Principles
+- Integration Architecture Guidelines
