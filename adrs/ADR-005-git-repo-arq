@@ -1,0 +1,129 @@
+# ADR-005: Git como Repositorio Oficial para la Gestión de Activos de Arquitectura
+
+## Estado
+
+Aceptado
+
+## Fecha
+
+2026-09-22
+
+## Contexto
+
+Los artefactos arquitectónicos de una organización suelen encontrarse distribuidos en múltiples herramientas y repositorios documentales, incluyendo documentos ofimáticos, plataformas colaborativas, repositorios de diagramas y espacios de conocimiento compartido.
+
+Esta dispersión dificulta la implementación de mecanismos efectivos de gobierno, trazabilidad y control de cambios, generando riesgos asociados a:
+
+- Versiones inconsistentes de la documentación.
+- Pérdida del historial de cambios.
+- Falta de visibilidad sobre las decisiones de arquitectura.
+- Dificultad para auditar modificaciones.
+- Dependencia del conocimiento de personas específicas.
+- Incremento de la deuda documental.
+
+Adicionalmente, los modelos tradicionales de documentación presentan limitaciones para integrarse con prácticas modernas de ingeniería como DevOps, GitOps, Integración Continua y Entrega Continua (CI/CD).
+
+## Decisión
+
+Adoptar Git como mecanismo oficial para el almacenamiento, versionamiento y gestión de los activos de arquitectura de la organización.
+
+Todos los artefactos arquitectónicos de nueva creación deberán mantenerse en repositorios Git corporativos, salvo excepciones debidamente justificadas y aprobadas por el órgano de gobierno de arquitectura.
+
+Los activos considerados dentro del alcance incluyen:
+
+- Architecture Decision Records (ADR).
+- Diagramas como Código.
+- Arquitecturas de referencia.
+- Principios de arquitectura.
+- Estándares tecnológicos.
+- Lineamientos de seguridad.
+- Políticas de observabilidad.
+- Modelos de integración.
+- Catálogos de servicios y capacidades.
+- Documentación técnica asociada a decisiones arquitectónicas.
+
+## Justificación
+
+Git se ha consolidado como el estándar de facto para la gestión de configuraciones y activos de software, proporcionando capacidades que resultan igualmente aplicables a la gestión arquitectónica.
+
+La adopción de Git permite:
+
+- Mantener historial completo de cambios.
+- Identificar autores y responsables de modificaciones.
+- Gestionar revisiones mediante Pull Requests.
+- Facilitar auditorías y procesos de cumplimiento.
+- Integrar controles automáticos de calidad.
+- Reducir la dependencia de herramientas propietarias.
+- Promover la colaboración entre arquitectos y equipos técnicos.
+- Alinear la arquitectura con los procesos de ingeniería de software.
+
+Adicionalmente, Git constituye la base para la implementación progresiva de una estrategia de Arquitectura como Código.
+
+## Alternativas Evaluadas
+
+### Herramientas Documentales Tradicionales
+
+#### Ventajas
+
+- Amplia adopción organizacional.
+- Baja curva de aprendizaje.
+
+#### Desventajas
+
+- Escaso control de cambios.
+- Dificultad para automatizar validaciones.
+- Trazabilidad limitada.
+- Dependencia de procesos manuales.
+
+### Plataformas de Gestión Documental
+
+#### Ventajas
+
+- Centralización de información.
+- Capacidades de colaboración.
+
+#### Desventajas
+
+- Limitaciones para integrar automatización.
+- Menor alineación con prácticas DevOps.
+- Gestión limitada de cambios a nivel técnico.
+
+### Git (Alternativa Seleccionada)
+
+#### Ventajas
+
+- Versionamiento robusto.
+- Integración con pipelines.
+- Facilidad de auditoría.
+- Revisión estructurada de cambios.
+- Amplio ecosistema de herramientas.
+
+#### Desventajas
+
+- Curva de aprendizaje inicial para usuarios no técnicos.
+- Necesidad de establecer estándares de organización y gobierno.
+
+## Consecuencias
+
+### Positivas
+
+- Trazabilidad completa de los activos arquitectónicos.
+- Historial unificado de modificaciones.
+- Incremento de la colaboración entre equipos.
+- Estandarización documental.
+- Integración con procesos DevOps y GitOps.
+- Capacidad de automatizar validaciones y controles.
+- Mejora en los procesos de auditoría y cumplimiento.
+
+### Negativas
+
+- Requerimientos de capacitación en Git.
+- Necesidad de definir procesos de gobierno y aprobación.
+- Adaptación cultural hacia modelos de trabajo colaborativo basados en repositorios.
+
+## Implicaciones de Gobierno
+
+La adopción de Git como repositorio oficial implica definir estándares relacionados con:
+
+- Estructura de repositorios.
+- Convenciones de 
